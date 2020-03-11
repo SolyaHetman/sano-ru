@@ -1,0 +1,23 @@
+.contact-header {
+    background: $OrangeColor;
+    height: 80px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: relative;
+    .text-header {
+        h1 {
+            color: $DarkColor;
+            text-align: center;
+            font-family: 'Open Sans';
+            font-size: 36px;
+            line-height: 49px;
+            margin-top: 13px;
+        }
+    }
+}
+
+hr {
+    background-color: $OrangeColor;
+}

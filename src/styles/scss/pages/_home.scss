@@ -1,0 +1,23 @@
+#carouselExampleFade {
+    .carousel-inner {
+        .carousel-item {
+            img {
+                height: 360px;
+                object-fit: cover;
+                object-position: center center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #carouselExampleFade {
+        .carousel-inner {
+            .carousel-item {
+                img {
+                    height: 200px;
+                }
+            }
+        }
+    }
+}

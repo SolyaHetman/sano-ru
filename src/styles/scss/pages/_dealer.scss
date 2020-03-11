@@ -1,0 +1,57 @@
+main {
+    .photo {
+        max-width: 500px;
+        img {
+            width: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+    }
+    .title {
+        h5 {
+            font-family: 'Open Sans';
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 38px;
+            color: #FA9101;
+        }
+    }
+    .contact {
+        list-style: none;
+        .contact-item {
+            display: flex;
+            flex-direction: row;
+            h1 {
+                color: #391E21;
+                font-family: 'Open Sans';
+                font-size: 16px;
+                line-height: 22px;
+            }
+            a {
+                color: #391E21;
+                text-decoration: none;
+                font-family: 'Open Sans';
+                font-size: 16px;
+                line-height: 22px;
+                margin-bottom: 1rem;
+            }
+            a:hover {
+                color: #FA9101;
+                text-decoration: underline;
+                font-family: 'Open Sans';
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 761px) {
+    main {
+        .title {
+            h5 {
+                font-size: 21px;
+            }
+        }
+    }
+}

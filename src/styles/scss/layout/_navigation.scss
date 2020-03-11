@@ -1,0 +1,115 @@
+$DarkColor: #391E21;
+$OrangeColor: #FA9101;
+// Start Navbar
+.navbar-custom {
+    background: $DarkColor;
+}
+
+nav {
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                color: white;
+                font-family: 'Open Sans';
+                font-size: 17px;
+                line-height: 25px;
+                transition: 0.3s;
+                transition-timing-function: ease-in-out;
+                &:hover {
+                    color: #FA9101;
+                }
+                &.active {
+                    color: #FA9101;
+                }
+            }
+        }
+        .change-language {
+            .nav-link {
+                color: white;
+                margin-right: 20px;
+                font-family: 'Open Sans';
+                font-size: 17px;
+                line-height: 25px;
+                &.active {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    button:focus {
+        border: 1px solid white;
+        outline: none;
+    }
+    .dropdown-menu {
+        border: 1px solid rgb(243, 236, 230);
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        a {
+            color: #FA9101;
+            transition: 0.3s;
+            transition-timing-function: ease-in-out;
+        }
+        a:hover {
+            color: black;
+            background-color: white;
+        }
+    }
+    .dropdown {
+        a:focus {
+            outline: none;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    nav {
+        .change-language {
+            display: none;
+        }
+        .language {
+            display: flex;
+            flex-direction: row;
+            padding-left: 0px;
+            .change-language {
+                display: flex;
+                a {
+                    color: white;
+                    font-family: 'Open Sans';
+                    font-size: 17px;
+                    line-height: 25px;
+                    left: 0;
+                    padding-left: 0px;
+                    &.active {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .dropdown-menu {
+            background: $DarkColor;
+            border: none;
+            a {
+                color: white;
+                font-family: 'Open Sans';
+            }
+            a:hover {
+                background: $DarkColor;
+                color: white;
+                font-size: 17px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 993px) {
+    nav {
+        .language {
+            .change-language {
+                display: none;
+            }
+        }
+    }
+}
+
+// End Navbar

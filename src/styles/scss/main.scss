@@ -1,0 +1,69 @@
+// Base Folder
+@import "base/_normalize";
+@import "base/_typography";
+// Components Folder
+@import "components/_buttons";
+// Helpers Folder
+@import "helpers/_functions";
+@import "helpers/_mixins";
+// Layout Folder
+@import "layout/_header";
+@import "layout/_navigation";
+@import "layout/_footer";
+// Pages
+@import "pages/_home";
+@import "pages/_contact";
+@import "pages/_dealer";
+@import "pages/_productForPig";
+@import "pages/_productForBird";
+@import "pages/_productForCow";
+@import "pages/_moreProduct";
+// Boostrap
+@import "node_modules/bootstrap/scss/bootstrap";
+// Fonts
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
+$DarkColor: #391E21;
+$OrangeColor: #FA9101;
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    // background: #fbfbfb;
+}
+
+// Start CSS main section
+main {
+    padding-bottom: 4em;
+    padding-top: 4em;
+    section {
+        h5.title {
+            color: #FA9101;
+            font-family: 'Open Sans';
+            font-style: italic;
+        }
+    }
+    .image {
+        img {
+            width: 100%;
+        }
+    }
+    .history {
+        list-style: none;
+    }
+    .leaveQuestion {
+        h4 {
+            font-size: 1.8rem;
+            font-family: 'Open Sans';
+            color: #FA9101;
+        }
+        &__btn {
+            font-family: 'Open Sans';
+            border-radius: 5px;
+            color: #fff;
+            background-color: #391E21;
+            text-decoration: unset;
+            padding: 1rem;
+        }
+    }
+}
+
+// End CSS main section

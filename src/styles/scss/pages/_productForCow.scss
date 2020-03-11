@@ -1,0 +1,69 @@
+main {
+    .product {
+        border: 1px solid rgb(243, 236, 230);
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        background-color: white;
+        max-width: 80%;
+        .product_image {
+            border-bottom: 2px #fafafa solid;
+            img {
+                max-width: 70%;
+                min-height: 70%;
+                object-fit: cover;
+                border: 1px solid white;
+                border-radius: 10px;
+                transition: 0.4s ease-in-out;
+            }
+            img:hover {
+                transform: scale(1.05);
+            }
+        }
+        .product_descr {
+            padding: 1.5rem;
+            .title {
+                padding-bottom: 1rem;
+                a {
+                    color: #FA9101;
+                    font-family: 'Open Sans';
+                    font-size: 22px;
+                    line-height: 25px;
+                    font-weight: bold;
+                    transition: 0.4s;
+                    transition-timing-function: ease-in-out;
+                    &:hover {
+                        text-decoration: none;
+                        opacity: 0.7;
+                    }
+                }
+            }
+            .more {
+                a {
+                    padding: 0.5rem;
+                    background: rgba(57, 30, 33, 0.36);
+                    color: white;
+                    font-family: 'Open Sans';
+                    font-size: 13px;
+                    line-height: 25px;
+                    border-radius: 10px;
+                    transition: 0.4s;
+                    transition-timing-function: ease-in-out;
+                }
+                a:hover {
+                    color: white;
+                    box-shadow: 2px 7px 7px -4px #391E21;
+                    text-decoration: none;
+                }
+                a:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 567px) {
+    main .product {
+        max-width: 100%;
+    }
+}

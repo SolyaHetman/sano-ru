@@ -1,0 +1,50 @@
+$OrangeColor: #FA9101;
+$DarkColor: #391E21;
+header {
+    background: $OrangeColor;
+    height: 250px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: relative;
+    .text {
+        p:nth-child(1) {
+            color: $DarkColor;
+            font-family: 'Open Sans';
+            font-size: 36px;
+            line-height: 49px;
+        }
+        p:nth-child(2) {
+            color: $DarkColor;
+            font-family: 'Open Sans';
+            font-style: italic;
+            font-size: 24px;
+            line-height: 33px;
+        }
+    }
+    .first-section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: $DarkColor;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    header {
+        .big-screen {
+            display: none;
+        }
+        height: 120px;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    header {
+        .small-screen {
+            display: none;
+        }
+    }
+}

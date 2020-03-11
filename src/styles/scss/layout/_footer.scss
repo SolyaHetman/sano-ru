@@ -1,0 +1,17 @@
+// Start Footer
+$DarkColor: #391E21;
+footer {
+    background: $DarkColor;
+    padding: 0.6rem 0;
+    .text {
+        small {
+            font-family: 'Open Sans';
+            font-size: 13px;
+            line-height: 19px;
+            color: white;
+            text-align: center;
+        }
+    }
+}
+
+//END Footer
